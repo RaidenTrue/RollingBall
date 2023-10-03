@@ -1,0 +1,118 @@
+Begin Object Class=/Script/Engine.Material Name="M_Pickup_Coin"
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant3Vector Name="MaterialExpressionConstant3Vector_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant3Vector Name="MaterialExpressionConstant3Vector_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_299"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_298"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_297"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionClamp Name="MaterialExpressionClamp_0"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_2"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_1"
+      Texture=Texture2D'"/Game/Global/Textures/T_UnrealEngineDecal.T_UnrealEngineDecal"'
+      SamplerType=SAMPLERTYPE_Masks
+      MaterialExpressionEditorX=-1026
+      MaterialExpressionEditorY=-497
+      MaterialExpressionGuid=28F8B64644A419ED359B468205F4C2D8
+      Material=Material'"M_Pickup_Coin"'
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_0"
+      A=(Expression=MaterialExpressionConstant3Vector'"M_Pickup_Coin:MaterialExpressionConstant3Vector_0"')
+      B=(Expression=MaterialExpressionConstant3Vector'"M_Pickup_Coin:MaterialExpressionConstant3Vector_2"')
+      Alpha=(Expression=MaterialExpressionTextureSample'"M_Pickup_Coin:MaterialExpressionTextureSample_1"',OutputIndex=2,Mask=1,MaskG=1)
+      MaterialExpressionEditorX=-675
+      MaterialExpressionEditorY=-727
+      MaterialExpressionGuid=2892AB5945AEAE5548B3469E0DFAF91C
+      Material=Material'"M_Pickup_Coin"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant3Vector_2"
+      Constant=(R=0.847458,G=0.319489,B=0.000000,A=0.000000)
+      MaterialExpressionEditorX=-1006
+      MaterialExpressionEditorY=-777
+      MaterialExpressionGuid=01521353407CAEB2671A319B513699AB
+      Material=Material'"M_Pickup_Coin"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant3Vector_0"
+      Constant=(R=1.000000,G=0.543682,B=0.104455,A=0.000000)
+      MaterialExpressionEditorX=-1006
+      MaterialExpressionEditorY=-957
+      MaterialExpressionGuid=BD181D6E412AA853530464AD8ADB452A
+      Material=Material'"M_Pickup_Coin"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_0"
+      R=0.800000
+      MaterialExpressionEditorX=-497
+      MaterialExpressionEditorY=-17
+      MaterialExpressionGuid=109468F948A88A01040896836028B3E8
+      Material=Material'"M_Pickup_Coin"'
+   End Object
+   Begin Object Name="MaterialExpressionComment_299"
+      SizeX=302
+      SizeY=295
+      Text="Metallic"
+      MaterialExpressionEditorX=-560
+      MaterialExpressionEditorY=-80
+      MaterialExpressionGuid=2BC7E7BA4AEFC5F4E432A1AA1E0229FF
+      Material=Material'"M_Pickup_Coin"'
+   End Object
+   Begin Object Name="MaterialExpressionComment_298"
+      SizeX=388
+      SizeY=260
+      Text="Roughness"
+      MaterialExpressionEditorX=-542
+      MaterialExpressionEditorY=317
+      MaterialExpressionGuid=18DCA0264590649BBA318E95DD9F56AA
+      Material=Material'"M_Pickup_Coin"'
+   End Object
+   Begin Object Name="MaterialExpressionComment_297"
+      SizeX=1136
+      SizeY=848
+      Text="BaseColor"
+      MaterialExpressionEditorX=-1621
+      MaterialExpressionEditorY=-1018
+      MaterialExpressionGuid=A130393444A3A31E2B43868C1C46A12C
+      Material=Material'"M_Pickup_Coin"'
+   End Object
+   Begin Object Name="MaterialExpressionClamp_0"
+      Input=(Expression=MaterialExpressionTextureSample'"M_Pickup_Coin:MaterialExpressionTextureSample_1"',OutputIndex=2,Mask=1,MaskG=1)
+      MinDefault=0.150000
+      MaxDefault=0.300000
+      MaterialExpressionEditorX=-480
+      MaterialExpressionEditorY=380
+      MaterialExpressionGuid=85A4CD7A4D21A6430FF5B5A52D900A65
+      Material=Material'"M_Pickup_Coin"'
+   End Object
+   BaseColor=(Expression=MaterialExpressionLinearInterpolate'"MaterialExpressionLinearInterpolate_0"')
+   Metallic=(Expression=MaterialExpressionConstant'"MaterialExpressionConstant_0"')
+   Roughness=(Expression=MaterialExpressionClamp'"MaterialExpressionClamp_0"')
+   Expressions(0)=MaterialExpressionLinearInterpolate'"MaterialExpressionLinearInterpolate_0"'
+   Expressions(1)=MaterialExpressionConstant'"MaterialExpressionConstant_0"'
+   Expressions(2)=MaterialExpressionClamp'"MaterialExpressionClamp_0"'
+   Expressions(3)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_1"'
+   Expressions(4)=MaterialExpressionConstant3Vector'"MaterialExpressionConstant3Vector_0"'
+   Expressions(5)=MaterialExpressionConstant3Vector'"MaterialExpressionConstant3Vector_2"'
+   EditorComments(0)=MaterialExpressionComment'"MaterialExpressionComment_297"'
+   EditorComments(1)=MaterialExpressionComment'"MaterialExpressionComment_298"'
+   EditorComments(2)=MaterialExpressionComment'"MaterialExpressionComment_299"'
+   ParameterGroupData(0)=(GroupName="None")
+   bCanMaskedBeAssumedOpaque=True
+   StateId=99E74E144288B18B98124B9832A2BBA4
+   ReferencedTextureGuids(0)=D8A89CD6433FD091555F4CB8ADF77C89
+   TextureStreamingDataVersion=1
+   TextureStreamingData(0)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="T_UnrealEngineDecal",TextureReference="/Game/Global/Textures/T_UnrealEngineDecal.T_UnrealEngineDecal")
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_2"'
+   LightingGuid=B5AD80FF470437F36CFB01BF18CAE62C
+End Object
